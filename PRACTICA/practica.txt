@@ -1,3 +1,6 @@
 practica.txt
 otra modificacion
 una mas
+dale nomas
+git commit --m ""
+git commit -am ""
