@@ -1,6 +1,11 @@
+acrchivo en RAMA MASTER
+
 practica.txt
 otra modificacion
 una mas
 dale nomas
 git commit --m ""
 git commit -am ""
+git checkout RAMA  --lo usamos para cambiar de RAMA
+
+no podemos cambiar de rama si modificamos un archivo y no lo comiteamos
