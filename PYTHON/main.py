@@ -1,7 +1,5 @@
 """y = 5
 print(id(y))
-# nombre=input("Ingrese su nombre: ")
-# print(nombre)
 mivariable = 10
 print(mivariable)
 print(type(mivariable))
@@ -28,31 +26,36 @@ print(id(z))"""
 # Tipos in, float, string, bool
 """x = 10
 print(x)
-print(type(x))
+print(type(x))"""
 
-# Manejo de cadenas
+# Manejo de cadenas Grupo Favorito
 
-miGrupoFavorito = "La Oreja de VanGogh"
+"""miGrupoFavorito = "La Oreja de VanGogh"
 caracteristicas = "The best rock band"
 print("Mi grupo favorito es: ", miGrupoFavorito, caracteristicas)
-
-numero1 = "7"
+"""
+# concatenación de variables
+"""numero1 = "7"
 numero2 = "8"
-print(int(numero1) + int(numero2))
+print(int(numero1) + int(numero2))"""
 
 # Tipos booleanos (Bool)
-miBooleano = 3 < 2
+"""miBooleano = 3 < 2
 print(miBooleano)
 if miBooleano:
     print("es verdadero")
 else:
-    print("El resultado es falso")
+    print("El resultado es falso")"""
 
 # entrada del usuario
-resultado = input("Ingrese un numero: ")
-print(resultado)
+
+"""resultado = input("Ingrese un numero: ")
+
+print(resultado)"""
+
 # conversión
-numero1 = int(input("ingrese el primer número: "))
+
+"""numero1 = int(input("ingrese el primer número: "))
 numero2 = int(input("ingrese el segundo número: "))
 print("el resultado es: ", numero1+numero2)"""
 
@@ -63,24 +66,30 @@ area=alto*ancho
 perim=2*alto + 2*ancho
 print(f"el area es: {area}")
 print(f"el perimetro es: {perim}")"""
+
+# comparación de funciones
+
 """x = 5
 y = 2
-# comparacion funciones
+
 resultado = (x+y/2) == (x*3-y)
-print(f"compara funciones {resultado}")
+print(f"compara funciones {resultado}")"""
 
 
 # diferente
 
-resultado = x != y
-print(f"resultado distinto {resultado}")
+"""resultado = x != y
 
-# mayor menor
+print(f"resultado distinto {resultado}")"""
 
-resultado = x < y
-print(f"res x menor y {resultado}")
+# compara mayor y menor
 
-resultado = x > y
+"""resultado = x < y
+
+print(f"res x menor y {resultado}")"""
+
+"""resultado = x > y
+
 print(f"resultado x mayor y {resultado}")"""
 
 # numero par o impar
@@ -99,3 +108,4 @@ if edad >= 18:
     print("Es mayor de edad")
 else:
     print("Es menor de edad")"""
+
