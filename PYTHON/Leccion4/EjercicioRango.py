@@ -1,4 +1,7 @@
-# ejrcicio 1
+#
+#             ----------- CAPTURA EJERCICIOS DE ANDRES WINCKLER --------------
+#
+# ejercicio 1
 print("Rango de 0 a 10 con números divisibles por 3")
 for i in range(0,11):
     if i % 3 == 0:
