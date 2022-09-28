@@ -14,7 +14,11 @@ public class Ciclos06 {
     do{
         System.out.println("Digite un número");
         numero = Integer.parseInt(entrada.nextLine());
+        suma +=numero;
         
+        
+    }while (numero !=0);
+        System.out.println("\nLa suma de todos los numeros ingresados es: "+suma);
     }
-    }
+    
 }
