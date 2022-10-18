@@ -6,6 +6,19 @@ public class Aritmetica {
     //Atributos de la clase
     int a;
     int b;
+    
+    //El constructor es un metodo especial
+    public Aritmetica(){  //constructor 1 VACIO
+        System.out.println("Se esta ejecutando este cosntructor numero uno");
+    }
+    // Estamos viendo lo que se llama sobrecaga de constructores
+    public Aritmetica(int a, int b){  //COSNTRUCTOR 2
+        this.a = a;
+        this.b = b;
+        System.out.println("Se esta ejecutando este constructor numero dos");
+    }
+    
+    
     //Metodos
     public void sumarNumeros(){
         int resultado = a+b;

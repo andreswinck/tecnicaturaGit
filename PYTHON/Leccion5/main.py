@@ -95,11 +95,12 @@ desplegarNombres((10, 11))  #  numeros pasados como tupla (tiene que haber una c
 desplegarNombres([12, 13])  #  numeros pasados como lista
 
 # funciones recursivas
+# clacula el factorial de un número ingresado por el usuario
 def factorial(numero):
     if numero == 1:  # caso base
         return 1
     else:
         return numero * factorial(numero-1) # caso recursivo
-
-resultado = factorial(5)
-print(f"el factorial del numero 5 es: {resultado}")
+numerofactorial = int(input("Digite el número para calcular el factorial; "))
+resultado = factorial(numerofactorial)  # Lo hacemos en código duro
+print(f"el factorial del numero {numerofactorial} es: {resultado}")
