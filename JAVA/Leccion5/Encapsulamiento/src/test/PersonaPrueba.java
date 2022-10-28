@@ -11,6 +11,7 @@ public class PersonaPrueba {
         //Modificar a través de los métodos
         
         persona1.setNombre("Juan Ignacio");
+        
         //persona1.nombre ="Juan Ignacio"; ya no se puede utilizar por el encapsulamiento
         //System.out.println("persona1 = " + persona1.nombre);
         
@@ -21,6 +22,7 @@ public class PersonaPrueba {
         
         //Tarea Crear un objeto de tipo Persona, asignar valores de manera inicial
         //e imprimir, luego modificar sus valores y volver a imprimir
+        System.out.println("persona1: " + persona1);
         
         //creamos persona2 y mostramos los datos
         Persona persona2 = new Persona("Jorge",100000, false);
