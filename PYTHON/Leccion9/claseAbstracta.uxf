@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>12</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>552</x>
+      <y>60</y>
+      <w>132</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Color&gt;&gt;
+--
++color</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>480</x>
+      <y>396</y>
+      <w>252</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Rectángulo&gt;&gt;
+--
++area()&lt;&lt;implementación&gt;&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>108</x>
+      <y>48</y>
+      <w>252</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;FiguraGeométrica&gt;&gt;
+--
+-alto
+_ancho
+--
++area()&lt;&lt;abstract&gt;&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>108</x>
+      <y>480</y>
+      <w>252</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Cuadrado&gt;&gt;
+--
++area()&lt;&lt;implementación&gt;&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>120</x>
+      <y>156</y>
+      <w>504</w>
+      <h>264</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;400.0;200.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>180</x>
+      <y>120</y>
+      <w>528</w>
+      <h>384</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;300.0;420.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>120</x>
+      <y>156</y>
+      <w>156</w>
+      <h>348</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;270.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>588</x>
+      <y>120</y>
+      <w>168</w>
+      <h>300</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;230.0</additional_attributes>
+  </element>
+</diagram>
