@@ -29,7 +29,8 @@ class Producto:
 
 if __name__ == "__main__":  # Solo sera visible si la prueba se ejecuta desde aquí
     prducto1 = Producto("Camiseta", 100.00)
+    print(prducto1)
     prducto2 = Producto("Pantalon", 150.00)
+    print(prducto2)
 
-# clase 15.1 videos 2s122
 
