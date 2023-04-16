@@ -53,8 +53,8 @@ body{
 .logo_pagina_principal{
   /* display: flex; */
 
-  /* margin-left: 700px; */
-text-align: center;
+  margin-left: 700px;
+  align-items: center;
   
 }
 .titulo_superior{
@@ -117,7 +117,7 @@ padding-top: 20px;
     background-color: #64072e;
     text-align:center;
     width: 30%;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     box-sizing: border-box;
     height: 460px;
     text-align: center;
@@ -128,7 +128,7 @@ padding-top: 20px;
   padding-top: 15px;
   text-align: center;
   font-size: 20px;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   color: #fff;
 }
   .imagen_servicio{
@@ -137,107 +137,74 @@ padding-top: 20px;
     display: flex;
     align-items: center;
   }
-.separacion_ser_cont{
-  padding-bottom: 30px;
-}
+
 /* seccion contacto */
 
 .seccion_contacto{
-  padding-top: 30px;
-  padding-left: 350px;
-  padding-bottom: 30px;
-  /* text-align: center; */
-  /* align-items: center;
-  align-content: center; */
-
+  padding-top: 50px ;
+  margin-left: 300px;
+  width: 710px;
+  padding-bottom: 50px;
 }
 .titulo_contacto{
   color: rgb(255, 255, 255);
   text-align: center;
   background-color: #64072e;
   font-size: 30px;
-  padding-top: 10px;
-}
-
-form label {
-  display: block;
-  margin-bottom: 10px;
-  color: #ffffff;
-}
-
-form input{
-  display: flex;
-  width: 700px;
-  height: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
 }
 
-form textarea {
-  display: block;
-  width: 700px;
-  height: 300px;
-  color: #ffffff;
-}
+  form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #ffffff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+  form input{
+    display: block;
+    color: #d8cbcbbe;
+    width: 700px;
+    height: 30px;
+  }
 
-form input[type="submit"] {
-  background-color: #220b86;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  text-align: center;
-  width: 100px;
-}
+  form textarea {
+    display: block;
+    width: 700px;
+    height: 300px;
 
-form input[type="submit"]:hover {
-  background-color:#430f66;
-}
-
+  }
+  form input[type="submit"] {
+    
+    background-color: #220b86;
+    color: #fff;
+    border: none;
+    width: 150px;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 300px;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color:#64072e;
+  }
   .titulo_ubicacion{
     font-size: 25px;
     padding-top: 10px;
     padding-bottom: 10px;
-    text-align: center;
-    color: #fff;
-    background-color: #64072e;
   }
-
-
-
   .mapa{
 
+    width: 700px;
+    height: 550px;
+    color: #fff;
+    background-color: #64072e;
+    margin-left: 300px;
     text-align: center;
     margin-bottom: 50px;
 
   }
-  .container-boton{
-    background-color: #2e6329;
-    border: 1px solid #fff;
-    position: fixed;
-    z-index: 999;
-    border-radius: 50%;
-    bottom: 20px;
-    right: 25px;
-    padding: 25px;
-    transition: ease 0.3s;
-    animation: efecto 1.2s infinite;
-}
-
-.container-boton:hover{
-    transform: scale(1.1);
-    transition: 0.3s;
-}
-
-.boton{
-    width: 80px;
-    transition: ease 1s;
-}
-
-@keyframes efecto{
-    0%{
-        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
-    }
-    100%{
-        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
-    }
-}
