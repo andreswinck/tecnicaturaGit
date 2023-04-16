@@ -1,0 +1,185 @@
+/* Estilos para el encabezado y menú de navegación */
+
+
+header {
+  /* font-family: 'Roboto', sans-serif; */
+  /* font-family: 'Acme', sans-serif; */
+  font-family: 'Rubik', sans-serif;
+    height: 60px;
+    background-color: #64072e;
+
+    /* margin-left: 900px; */
+    width: 1400px;
+}
+/* barra de navegacion superior */
+
+
+nav {
+  float:right;
+}
+
+nav ul {
+  list-style-type:circle;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff; /* Blanco */
+  display: block;
+  padding: 20px;
+  text-decoration:solid;
+}
+
+nav a:hover {
+  background-color:#430f66 ;
+}
+
+/* Body */
+
+
+body{
+  font-family: 'Acme', sans-serif;
+  /* font-family: 'Rubik', sans-serif; */
+  /* font-family: 'Roboto', sans-serif; */
+
+
+    background-color: #23003a;
+}
+.logo_pagina_principal{
+  /* display: flex; */
+
+  margin-left: 700px;
+  align-items: center;
+  
+}
+.titulo_superior{
+  padding-left: 100px;
+  text-align: center;
+  color: #fff;
+}
+.slogan{
+  /* text-align: right ; */
+  /* margin-left: 1000 px ; */
+  padding-left: 550px;
+  color: #fff;
+  padding-bottom: 50px;
+}
+
+
+  
+  /* Estilos para la sección de servicios */
+.separacion_servicios{
+  /* margin-left: 350px; */
+  width: 1450px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.titulo_servicios{
+
+  color: #ffffff;
+  background-color: #64072e;
+  text-align: center;
+  /* width:1200px; */
+}
+
+  #services {
+        display: flex;
+    flex-direction: row;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    /* margin: 50px 0; */
+    background-color:#23003a;
+    justify-content:space-around;
+    /* flex-wrap: wrap; */
+  }
+  
+  .columna_servicios {
+    color: #fff;
+    background-color: #64072e;
+    text-align:center;
+    width: 30%;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    height: 510px;
+}
+  .imagen_servicio{
+    padding-top: 20px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+/* seccion contacto */
+
+.seccion_contacto{
+  padding-top: 50px ;
+  margin-left: 300px;
+  width: 710px;
+  padding-bottom: 50px;
+}
+.titulo_contacto{
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background-color: #64072e;
+
+}
+
+  form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #ffffff; 
+  }
+  
+  form input{
+    display: block;
+    color: #d8cbcbbe;
+    width: 700px;
+    height: 30px;
+    /* padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 20px; */
+  }
+
+  form textarea {
+    display: block;
+    width: 700px;
+    height: 300px;
+    /* padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 20px; */
+
+  }
+  form input[type="submit"] {
+    background-color: #220b86;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color:#430f66;
+  }
+  .mapa{
+
+    width: 700px;
+    height: 550px;
+    color: #fff;
+    background-color: #64072e;
+    /* margin-right: 100px; */
+    margin-left: 300px;
+    text-align: center;
+    margin-bottom: 50px;
+    /* margin-left: 350px; */
+  }
