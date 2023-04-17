@@ -1,40 +1,55 @@
 /* Estilos para el encabezado y menú de navegación */
 
-
+*{
+  padding: 0;
+  margin: 0;
+}
+.wrapper{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
 header {
   font-family: 'Roboto', sans-serif;
   /* font-family: 'Acme', sans-serif; */
   /* font-family: 'Rubik', sans-serif; */
-    height: 60px;
-    background-color: #64072e;
+    /* height: 60px; */
+    background-color: #41041d;
     font-size: 20px;
 
+
     /* margin-left: 900px; */
-    /* width: 1400px; */
+    width: 100%;
+    position: fixed;
+    z-index: 10;
 }
 /* barra de navegacion superior */
 
 
 nav {
   float:right;
+
 }
 
 nav ul {
-  list-style-type:circle;
-  margin: 0;
-  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  /* list-style-type:circle; */
+  /* margin: 0;
+  padding: 0; */
 }
 
 nav li {
+
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 nav a {
   color: #fff; /* Blanco */
   display: block;
-  padding: 20px;
-  text-decoration:solid;
+  padding: 15px;
+  text-decoration:none;
 }
 
 nav a:hover {
@@ -42,13 +57,25 @@ nav a:hover {
 }
 
 /* Body */
+/* .imagen_fondo{
+  background-image: url();
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size: cover;
+  height: 20em;
 
+} */
 
 body{
+  background-image: url(../img/background5.jpg);
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size: cover;
+  height: 1em;
   /* font-family: 'Acme', sans-serif; */
   /* font-family: 'Rubik', sans-serif; */
   font-family: 'Roboto', sans-serif;
-    background-color: #23003a;
+    /* background-color: #23003a; */
 }
 .logo_pagina_principal{
   /* display: flex; */
@@ -75,7 +102,7 @@ font-style: italic;
   color: #fff;
   padding-bottom: 20px;
   font-size: 30px;
-  text-align: center;
+  text-align: center; 
   background-color: #430f66;
   /* width: 800px; */
   align-items: center;
@@ -86,9 +113,11 @@ font-style: italic;
 
   
   /* Estilos para la sección de servicios */
+
+  
 .separacion_servicios{
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 
 }
 .titulo_servicios{
@@ -96,8 +125,8 @@ padding-top: 20px;
   color: #ffffff;
   background-color: #64072e;
   text-align: center;
-  font-size: 40px;
-  height: 50px;
+  font-size: 26px;
+  height: 40px;
   align-items: center;
 
 }
@@ -137,11 +166,12 @@ padding-top: 20px;
     display: flex;
     align-items: center;
   }
-.separacion_ser_cont{
-  padding-bottom: 30px;
-}
+
 /* seccion contacto */
 
+.separacion_ser_cont{
+  padding-bottom: 50px;
+}
 .seccion_contacto{
   padding-top: 30px;
   padding-left: 350px;
