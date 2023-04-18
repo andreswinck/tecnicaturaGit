@@ -12,7 +12,7 @@ public class Monitor {
     
     public Monitor(String marca, double tamanio){
         this(); //llamado al constructor vacio
-        this.marca = maraca;
+        this.marca = marca;
         this.tamanio = tamanio;
     }
 
