@@ -13,7 +13,7 @@ header {
   font-family: 'Roboto', sans-serif;
   /* font-family: 'Acme', sans-serif; */
   /* font-family: 'Rubik', sans-serif; */
-  background-color: #4b0303;
+  background-color: #000000;
   font-size: 20px;
   width: 100%;
   position: fixed; /* fijar el menu*/
@@ -43,7 +43,7 @@ nav li {
 }
 
 nav a {
-  color: #d3c3c3; /* Blanco */
+  color: #9afa01; /* Blanco */
   display: block;
   padding: 15px;
   text-decoration:none;
@@ -90,7 +90,7 @@ text-align: center;
   padding-bottom: 20px;
   text-align: center;
   font-size: 30px;
-  color: #fff;
+  color: #d4f807;
 /* font-style: italic; */
 /* text-shadow:6px 6px 9px #2e6329; */
 text-shadow:6px 6px 5px #000000;
@@ -122,7 +122,7 @@ text-shadow:6px 6px 5px #000000;
 .titulo_servicios{
 padding-top: 20px;
   color: #ffffff;
-  background-color: #64072e;
+  /* background-color: #64072e; */
   text-align: center;
   font-size: 26px;
   height: 40px;
@@ -142,7 +142,7 @@ padding-top: 20px;
   
   .columna_servicios {
     color: #c4b2b2;
-    background-color: #64072e;
+    /* background-color: #64072e; */
     /* opacity: 0.8; */
     text-align:center;
     width: 30%;
@@ -187,7 +187,7 @@ padding-top: 20px;
 .titulo_contacto{
   color: rgb(255, 255, 255);
   text-align: center;
-  background-color: #64072e;
+  /* background-color: #64072e; */
   font-size: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -211,7 +211,7 @@ form textarea {
   display: block;
   width: 700px;
   height: 300px;
-  color: #ffffff;
+  color: #0c0202;
 }
 
 form input[type="submit"] {
@@ -234,7 +234,7 @@ form input[type="submit"]:hover {
     padding-bottom: 10px;
     text-align: center;
     color: #fff;
-    background-color: #64072e;
+    /* background-color: #64072e; */
     text-shadow:6px 6px 5px #000000;
   }
 
@@ -251,7 +251,7 @@ form input[type="submit"]:hover {
     padding-bottom: 10px;
     text-align: center;
     color: #fff;
-    background-color: #64072e;
+    /* background-color: #64072e; */
     text-shadow:6px 6px 5px #000000;
 
   
@@ -263,9 +263,9 @@ form input[type="submit"]:hover {
       padding-top: 10px;
       padding-bottom: 10px;
       text-align: center;
-      color: #ffffff;
-      background-color: #170f84;
-      text-shadow:6px 6px 5px #000000;
+      color: #360ea3;
+      background-color: #eec1c1;
+      text-shadow:6px 6px 8px #000000;
       height: 300px;
       width: 700px;
       align-items: center;
@@ -280,8 +280,8 @@ footer{
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
-  background-color: #4b0303;
-  color: #fff;
+  background-color: #000000;
+  color: #e8f803;
 }
 
 
