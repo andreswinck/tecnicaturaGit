@@ -81,6 +81,9 @@ h1{
 .la-empresa .contenedor{
     max-width: 1000px;
     text-align: center;
+    min-width: 300px;
+    overflow: auto;
+    
 }
 
 /* servicios */
