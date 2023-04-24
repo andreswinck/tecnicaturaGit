@@ -39,3 +39,59 @@ console.log(miFuncionTexto);
 
 // seguir en video 6 de la clase 3 de js
 
+// Funciones flecha
+const sumarFuncionFlecha = (a, b) => a + b;
+resultado = sumarFuncionFlecha(3, 7);//Asignamos el valor de una variable
+console.log(resultado);
+
+
+//funcion tipo expresión
+// argumentos ->  cdo llamamos a la funcion le pasamos arguemntos
+// parametros -> las variables que se declaran en la funcion son los parametros de la funcion
+let sumar = function(a = 4 , b = 8){
+    console.log(arguments[0]); // muestra el parametro de: a
+    console.log(arguments[1]);
+    console.log(arguments[2]);
+    return a + b + arguments[2]; //muestra el parametro de: b
+}
+resultado = sumar(3,2,9);
+console.log(resultado);
+
+//Sumar todos los argumentos (HOISTING)
+let respuesta = sumarTodo(5,4,13,10,9);
+console.log(respuesta);
+function sumarTodo(){
+    let suma = 0;
+    for(let i=0; i<arguments.length;i++ ){
+        suma +=arguments[i]; // arguments es para arreglos
+    }
+    return suma
+}
+
+// Tipos primitivos
+
+//paso por valor
+let k = 10;
+function cambiarValor(a){ //paso por valor
+    a = 20;
+}
+
+cambiarValor(k);
+console.log(k);
+
+
+//paso por referencia
+const persona = {
+    nombre: "Juan",
+    apellido: "Lepez"
+}
+console.log(persona);
+function cambiarValorObjeto(p1){
+    p1.nombre = "Ignacio";
+    p1.apellido = "Perez";
+}
+
+cambiarValorObjeto(persona);
+console.log(persona);
+
+
