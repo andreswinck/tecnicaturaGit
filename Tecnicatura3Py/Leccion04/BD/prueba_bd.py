@@ -1,20 +1,23 @@
 import psycopg2  # Esto es para conectarnos a POSTGREd
 
-conexion = psycopg2.connect(
-    user='postgres',
-    password='admin',
-    host='127.0.0.1',
-    port='5432',
-    database='test_bd'
-)
+conexion = psycopg2.connect(user='postgres',password='admin',host='127.0.0.1',port='5432',database='test_bd')
 # print(conexion)
+try:
 
-cursor = conexion.cursor()
-sentencia = 'SELECT * FROM persona'
-cursor.execute(sentencia)  # de esta manera ejecutamos la sentencia
-registros = cursor.fetchall()  # recuperamos todos los registros
-print(registros)
+    with conexion:
+        with conexion.cursor() as cursor:
 
-cursor.close()
-conexion.close()
+            sentencia = 'SELECT * FROM persona WHERE id_persona = %s'  # Placeholder
+            id_persona = input('Digite un número para el id_persona: ')
+            cursor.execute(sentencia,(id_persona,))  # de esta manera ejecutamos la sentencia
+            registros = cursor.fetchone()  # recuperamos todos los registros
+            print(registros)
+except Exception as e:
+    print(f'Ocurrió un error: {e}')
+finally:
+    conexion.close()
 
+
+
+
+#  https://www.psycopg.org/docs/usage.html
