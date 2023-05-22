@@ -1,0 +1,41 @@
+/*REGISTRO*/
+
+/* color fondo de la app */
+body{
+    background-color: #110c3B;
+}
+.card{
+    width: 25%;
+    background: linear-gradient(#110c3B,#67254f,#110c3B);
+    color: #fafafa;
+    border-radius: 1rem;
+    border-color: #cd9fa3;
+    margin-top: 2rem;
+}
+.card-form{
+    height: 90vh;
+}
+h1{
+    font-size: 1.3rem;
+}
+.btn{
+    background-color: #fafafa;
+    color: #110c3B;
+}
+.btn:hover{
+    transition: .5s;
+    background-color: #cd9fa3;
+    color: #fafafa;
+}
+/*Botones de aceptar y volver*/
+.botones-registro{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+/*REACTIVO*/
+@media (max-width: 576px) {
+    .card{
+        width: 100%;
+    }
+}

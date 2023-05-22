@@ -1,0 +1,78 @@
+
+/*LOGIN*/
+/* color fondo de la app */
+body{
+    background-color: #110c3B;
+    display: flex;
+}
+.card{
+    width: 25%;
+    background: linear-gradient(#110c3B,#67254f,#110c3B);
+    color: #fafafa;
+    border-radius: 1rem;
+    border-color: #cd9fa3;
+    margin-top: 2rem;
+}
+.card-form{
+    height: 90vh;
+}
+
+.fecha-hora{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: .5rem;
+    border-color: #cd9fa3;
+}
+
+h1{
+    font-size: 1rem;
+}
+.btn{
+    background-color: #fafafa;
+    color: #110c3B;
+}
+.btn:hover{
+    transition: .5s;
+    background-color: #cd9fa3;
+    color: #fafafa;
+}
+.contenedor-busquedas{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+.muestra-busqueda{
+    display: flex;
+   
+}
+table{
+    font-size: small;
+}
+.cabecera{
+    font-weight: bold;
+    font-size: small;
+}
+.captura{
+    justify-content: space-between;
+}
+.status{
+    border: 1px solid #fafafa;
+    background-color: #008000;
+    border-radius: 5px;
+}
+
+.status1{
+    border: 1px solid #fafafa;
+    background-color: #ff0000;
+    border-radius: 5px;
+}
+
+@media (max-width: 576px) {
+    .card{
+        width: 100%;
+    }
+}
+

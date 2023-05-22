@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Control Estacionamiento</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <!--Google-fonts -Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!--Link estylos css-->
+    <link rel="stylesheet" href="./Css/reset.css">
+    <link rel="stylesheet" href="./Css/inspector.css">
+    <!--Toastify-js-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!--FIREBASE-->
+    
+    </head>
+    <body>
+        <div class="container d-flex justify-content-center card">
+            <div class="row align-items-center d-flex justify-content-center card-form">
+                <div>
+                    <h1 class="fw-bold text-uppercase d-flex justify-content-center p-1">Control Estacionamiento</h1>
+                    <h2 class="fw d-flex justify-content-center p-1 mb-2">Panel de control Inspector:</h2>
+                    <div class="fecha-hora p-1 mb-3">
+                        <!--Hora-->
+                        <p id="fecha" class="fecha_hora d-flex justify-content-center mb-2"></p>
+					    <!-- reloj -->
+					    <div id="hora" class="fecha_hora d-flex justify-content-center mb-2"></div>
+                    </div>
+                    <div class="busqueda align-items-center">
+                        <form class="form" action="" >
+                            <label class="label-form d-flex justify-content-left mb-2" >Busqueda por Dominio:</label>
+                            <div class="contenedor-busquedas">
+                                <input class="form-control" type="text" placeholder="N° Patente">
+                                <button class="btn" type="submit" id="search">Buscar</button>
+                            </div>
+                            <label class="label-form d-flex justify-content-left mb-2 mt-2" >Busqueda por fecha:</label>
+                            <div class="contenedor-busquedas">
+                                <input class="form-control" type="date">
+                                <button class="btn" type="submit" id="search">Buscar</button>
+                            </div>
+                            <label class="label-form d-flex justify-content-left mb-2 mt-2" >Busqueda por Hora:</label>
+                            <div class="contenedor-busquedas">
+                                <input class="form-control" type="time">
+                                <button class="btn" type="submit" id="search">Buscar</button>
+                            </div>
+                            <label class="label-form d-flex justify-content-center mt-3" >Resultado busqueda:</label>
+                            <div class="muestra-busqueda d-flex align-items-center mt-2">
+                                <table class="table table-info table-striped table-hover">
+                                    <thead >
+                                        <tr class="cabecera">
+                                          <th scope="col">Dominio</th>
+                                          <th scope="col">Fecha</th>
+                                          <th scope="col">Desde</th>
+                                          <th scope="col">Hasta</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody class="fila">
+                                        <tr>
+                                          <td scope="row">DNX258</td>
+                                          <td>05/05/2023</td>
+                                          <td>11:15</td>
+                                          <td>12:15</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">DNX258</td>
+                                            <td>05/05/2023</td>
+                                            <td>11:15</td>
+                                            <td>12:15</td>
+                                          </tr>
+                                          <tr>
+                                            <td scope="row">DNX258</td>
+                                            <td id="datos">05/05/2023</td>
+                                            <td>11:15</td>
+                                            <td>12:15</td>
+                                          </tr>
+                                          <tr>
+                                            <td scope="row">DNX258</td>
+                                            <td id="datos">05/05/2023</td>
+                                            <td>11:15</td>
+                                            <td>12:15</td>
+                                          </tr>
+                                          <tr>
+                                            <td scope="row">DNX258</td>
+                                            <td id="datos">05/05/2023</td>
+                                            <td>11:15</td>
+                                            <td>12:15</td>
+                                          </tr>
+                                      </tbody>
+                                </table>
+                            </div>
+                            <div class="status1 d-flex justify-content-center p-1 mb-2">
+                                <!-- <span>EN REGLA</span> -->
+                                <span>EN INFRACCIÓN</span>
+                            </div>
+                            <div class="captura d-flex">
+                                <button class="btn"><i class="icon bi bi-download descargar"></i><a href="#!"></a></button>
+                                <button class="btn btn-outline-light btn-md border border-dark" type="submit" id="registrarse">SALIR</button>
+                                <button class="btn"><i class="icon bi bi-share compartir"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>  
+        <script src="/MVC/control_hora.js"></script>           
+    </body>
+    </html>

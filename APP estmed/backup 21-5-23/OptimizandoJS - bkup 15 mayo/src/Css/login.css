@@ -1,0 +1,39 @@
+
+/*LOGIN*/
+/* color fondo de la app */
+body{
+    background-color: #110c3B;
+    display: flex;
+}
+.card{
+    width: 25%;
+    background: linear-gradient(#110c3B,#67254f,#110c3B);
+    color: #fafafa;
+    border-radius: 1rem;
+    border-color: #cd9fa3;
+    margin-top: 2rem;
+}
+.card-form{
+    height: 90vh;
+}
+h1{
+    font-size: 1.2rem;
+}
+.btn{
+    background-color: #fafafa;
+    color: #110c3B;
+}
+.btn:hover{
+    transition: .5s;
+    background-color: #cd9fa3;
+    color: #fafafa;
+}
+.logo{
+    width: 144px;    
+}
+
+@media (max-width: 576px) {
+    .card{
+        width: 100%;
+    }
+}

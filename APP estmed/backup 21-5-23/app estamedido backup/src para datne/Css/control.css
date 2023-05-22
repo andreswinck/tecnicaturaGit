@@ -1,0 +1,91 @@
+body{
+    background-color: #110c3B;
+}
+.card{
+    width: 25%;
+    background: linear-gradient(#110c3B,#67254f,#110c3B);
+    color: #fafafa;
+    border-radius: 1rem;
+    border-color: #cd9fa3;
+    margin-top: 2rem;
+}
+.card-form{
+    height: 90vh;
+}
+h1{
+    font-size: 1.3rem;
+}
+.display{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    gap: 1rem;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.3rem;
+    height: 3.3rem;
+    background-color: #b70c76;
+    color: #110c3B;
+    border-radius: 1.5rem;
+}
+.btn:hover{
+    transition: .8s;
+    background-color: #057134;
+    color: #fafafa;
+}
+.icon{
+    font-size: 3rem;
+    
+}
+.square{
+    width: 7rem;
+    height: 4rem;
+    background-color: #110c3B;
+    color: #fafafa;
+    border-radius: 1rem;
+    border: 2px solid #87d5a9;
+    font-size: 2rem;
+}
+.tiempo-asignado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.precio1{
+    width: 7rem;
+    height: 2.5rem;
+    background-color: #110c3B;
+    color: #fafafa;
+    border-radius: .5rem;
+    border: 2px solid #b70c76;
+    font-size: 2rem;
+}
+.precio2{
+    width: 7rem;
+    height: 2.5rem;
+    background-color: #110c3B;
+    color: #fafafa;
+    border-radius: .5rem;
+    border: 2px solid #87d5a9;
+    font-size: 2rem;
+}
+.acepta{
+    width: 70%;
+    height: 2.5rem;
+    border-radius: .5rem;
+    font-size: 1.3rem;
+}
+.acepta:hover{
+    transition: .8s;
+    background-color: #057134;
+    color: #fafafa;
+}
+.btn_nlc{
+    text-decoration: none;
+    color: black;
+}
