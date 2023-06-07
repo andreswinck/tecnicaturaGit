@@ -1,4 +1,4 @@
-class Persona{ //clase padre
+class Persona{ //clase padre  Hereda de la clase object de JS
     constructor(nombre, apellido){
         this._nombre = nombre;
         this._apellido = apellido;
@@ -17,6 +17,15 @@ class Persona{ //clase padre
     set apellido(apellido){
         this._apellido = apellido;
     }
+    nombreCompleto(){
+        return this._nombre+' '+this._apellido;
+    }
+// Sobreescritura de metodo de la clase padre
+    toString(){ //regresa un String
+        // se aplica polimorfismo que significa = muchas formas en tiempo de ejecucion
+        // el metodo que se ejecuta depende si es una referencia de tipo padre o de tipo hijo
+        return this.nombreCompleto();
+    }
 }
 
 class Empleado extends Persona{ //clase hija
@@ -31,10 +40,13 @@ class Empleado extends Persona{ //clase hija
     set departamento(departamento){
         this._departamento = this.departamento;
     }
+
+    //sobreescritura
+    nombreCompleto(){
+        return super.nombreCompleto()+', '+this._departamento;
+    }
+
 }
-
-
-
 
 let persona1 = new Persona('Martin','Perez');
 
@@ -75,4 +87,8 @@ console.log(persona2.nombre+' '+persona2.apellido)
 
 let empleado1 = new Empleado('Maria','Gimenez','Sistemas');
 console.log(empleado1);
-console.log(empleado1.nombre)
+console.log(empleado1.nombreCompleto());
+
+//Object.prototype.toString es la manera de acceder a atributos y metodos de manera dinamica
+console.log(empleado1.toString());
+console.log(persona1.toString());
