@@ -1,7 +1,13 @@
 class Persona{ //clase padre  Hereda de la clase object de JS
+
+    static contadorObjetosPersonas = 0; //atributo estatico
+    email = 'Valor default email'; //atributo no estatico
+
     constructor(nombre, apellido){
         this._nombre = nombre;
         this._apellido = apellido;
+        Persona.contadorObjetosPersonas++;
+        console.log('Se incrementa contador: '+Persona.contadorObjetosPersonas);
     }
 
     get nombre(){
@@ -25,6 +31,14 @@ class Persona{ //clase padre  Hereda de la clase object de JS
         // se aplica polimorfismo que significa = muchas formas en tiempo de ejecucion
         // el metodo que se ejecuta depende si es una referencia de tipo padre o de tipo hijo
         return this.nombreCompleto();
+    }
+
+    static saludar(){
+        console.log('Saludos desde metodo static');
+    }
+
+    static saludar2(persona){
+        console.log(persona.nombre+' '+persona.apellido);
     }
 }
 
@@ -92,3 +106,19 @@ console.log(empleado1.nombreCompleto());
 //Object.prototype.toString es la manera de acceder a atributos y metodos de manera dinamica
 console.log(empleado1.toString());
 console.log(persona1.toString());
+// persona1.saludar(); no se puede acceder a un metodo static desde un objeto
+Persona.saludar(); //se accede al metodo static desde la clase
+Persona.saludar2(persona1); //se accede al metodo static desde la clase y se le pasa un objeto como parametro
+Empleado.saludar(); //se accede al metodo static desde la clase y se le pasa un objeto como parametro
+Empleado.saludar2(empleado1); //se accede al metodo static desde la clase y se le pasa un objeto como parametro
+
+//console.log(persona1.contadorObjetosPersona);
+console.log(Persona.contadorObjetosPersonas);
+
+console.log(Empleado.contadorObjetosPersonas);
+
+console.log(persona1.email);
+console.log(empleado1.email);
+// console.log(Persona.email); no se puede acceder a un atributo no estatico desde la clase
+// seguir en clase 8 STATIC video 5 
+
