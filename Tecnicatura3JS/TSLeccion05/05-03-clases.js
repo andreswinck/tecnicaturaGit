@@ -1,13 +1,21 @@
 class Persona{ //clase padre  Hereda de la clase object de JS
 
-    static contadorObjetosPersonas = 0; //atributo estatico
-    email = 'Valor default email'; //atributo no estatico
-
+    static contadorPersonas = 0; //atributo estatico
+    //email = 'Valor default email'; //atributo no estatico
+    static get MAX_OBJ(){ // metodo simula ser una constante
+        return 5;
+    }
     constructor(nombre, apellido){
         this._nombre = nombre;
         this._apellido = apellido;
-        Persona.contadorObjetosPersonas++;
-        console.log('Se incrementa contador: '+Persona.contadorObjetosPersonas);
+        if(Persona.contadorPersonas < Persona.MAX_OBJ){
+           this.idPersona = ++Persona.contadorPersonas;
+        }
+        else{
+            console.log('Se han superado el maximo de objetos permitidos');
+        }
+        this.idPersona = ++Persona.contadorPersonas;
+        //console.log('Se incrementa contador: '+Persona.contadorObjetosPersonas);
     }
 
     get nombre(){
@@ -24,7 +32,7 @@ class Persona{ //clase padre  Hereda de la clase object de JS
         this._apellido = apellido;
     }
     nombreCompleto(){
-        return this._nombre+' '+this._apellido;
+        return this.idPersona+' '+this._nombre+' '+this._apellido;
     }
 // Sobreescritura de metodo de la clase padre
     toString(){ //regresa un String
@@ -120,5 +128,16 @@ console.log(Empleado.contadorObjetosPersonas);
 console.log(persona1.email);
 console.log(empleado1.email);
 // console.log(Persona.email); no se puede acceder a un atributo no estatico desde la clase
-// seguir en clase 8 STATIC video 5 
-
+console.log(persona1.toString());
+console.log(persona2.toString());
+console.log(empleado1.toString());
+console.log(Persona.contadorPersonas);
+let persona3 = new Persona('Carla','Pertosi');
+console.log(persona3.toString());
+console.log(Persona.contadorPersonas);
+console.log(Persona.MAX_OBJ);
+// Persona.MAX_OBJ = 10; no se puede modificar una constante
+let persona4 = new Persona('Franco','Diaz');
+console.log(persona4.toString());
+let persona5 = new Persona('Micaela','Gonzalez');
+console.log(persona5.toString());
