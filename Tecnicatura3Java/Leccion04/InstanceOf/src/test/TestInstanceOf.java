@@ -14,6 +14,9 @@ public class TestInstanceOf {
     public static void determinarTipo(Empleado empleado){
         if (empleado instanceof Gerente){
             System.out.println("Es de tipo Gerente");
+            //((Gerente) empleado).getDepartamento();
+            Gerente gerente = (Gerente)empleado;
+            System.out.println("gerente = " + gerente.getDepartamento());
         }
         else if (empleado instanceof Empleado){
             System.out.println("Es de tipo Empleado");
