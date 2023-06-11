@@ -1,3 +1,4 @@
+// Objetivo: mostrar el uso de funciones en JS
 miFuncion(8,2) //Esto se conoce como Hoisting
 
 function miFuncion(a, b){
@@ -93,5 +94,4 @@ function cambiarValorObjeto(p1){
 
 cambiarValorObjeto(persona);
 console.log(persona);
-
 
