@@ -37,10 +37,5 @@ class Persona{
         ${this._apellido} 
         ${this._edad}`;
     }
-          
-
-            
-
-
 }
 
