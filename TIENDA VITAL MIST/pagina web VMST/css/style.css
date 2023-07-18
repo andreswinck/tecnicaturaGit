@@ -1,12 +1,25 @@
-
+:root{
+    --clr-main: #83816f;
+    --clr-secundario: #9f9d8a;
+    --clr-terciario: #e6e6d3;
+    --clr-negro: #1f1f1f;
+    --clr-blanco: #f5f5f5;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family:; */
+}
 
 /* barra de navegacion */
 
 .navbar {
     padding:  .5rem;
-    background-color: #e6e6d3;
+    background-color: #83816f;
     font-weight: 400;
     font-size: 1.1rem;
+    /* color: white; */
  
     
 
@@ -14,6 +27,7 @@
 .navbar-collapse{
     align-items: center;
     justify-content:space-between;
+    /* color: white; */
 }
 
 /* Estilos generales */
@@ -22,10 +36,11 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #e6e6d3;
+    background-color:white;
 }
 h1{
     font-size: 2.5rem;
+
 }
 .seccion-oscura{
     color: white;
@@ -33,7 +48,7 @@ h1{
 }
 .seccion-clara{
     color: black;
-    background-color: #e6e6d3;
+    background-color: white;
 }
 
 .seccion-titulo{
@@ -41,6 +56,7 @@ h1{
     font-size: 2rem;
     padding: 15px 0;
     font-family: 'Rubik', sans-serif;
+    
 }
 
 .seccion-texto{
@@ -52,21 +68,27 @@ h1{
 
 /* seccion hero */
 
-.hero{
-    background-color: #e6e6d3;
+/* .hero{
+    background-color: white;
     min-height: 300px;
     text-align: center;
 
-}
+} */
 .hero-principal{
-    padding: 3rem;
+    padding: 1rem;
 }
-
-.hero-imagen-principal{
+.hero-logotipo{
     width: 600px;
-    height: 300px;
+    height: 150px;
     border-radius: 1%;
-    margin: 20px;
+    margin: 5px;
+    /* rounded-circle en bootrap */
+}
+.hero-imagen-principal{
+    width: 1480px;
+    height: 600px;
+    border-radius: 1%;
+    margin: 5px;
     /* rounded-circle en bootrap */
 }
 .hero-principal h2{

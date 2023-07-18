@@ -1,0 +1,71 @@
+/* importo flia rubik de google fonts */
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');*/
+
+
+/* :root{
+    --clr-oscuro: #83816f;
+    --clr-intermedio: #9f9d8a;
+    --clr-claro: #e6e6d3;
+    --clr-blanco: white;
+    --clr-negro:black;
+} */
+
+body{
+    margin: 0px;
+}
+
+/* navbar */
+.nav-container{
+    position: sticky;
+    z-index: 3;
+    top: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 12vh;
+    background-color: #1b1b1b;
+}
+
+.nav-logo{
+    justify-self: start;
+    margin-left: 20px;
+    color: #fff;
+    margin-top: 4vh;
+    cursor: pointer;
+}
+
+.ver-carrito{
+    font-size: 25px;
+    margin-right: 20px;
+    margin-top: 3.5vh;
+    cursor: pointer;
+}
+
+/* Banner styles */
+.banner{
+    background-size:cover;
+    background-position: center;
+    height: 85vh;
+    background-image: linear-gradient(rgba(148, 229, 189, 0),rgba(23, 201, 65, 0.348)),
+    url(/fotos/imagen_principal_vital_mist-transformed.jpeg);
+}
+
+.banner-container{
+    text-align: center;
+    padding: 3% 0;
+}
+
+.banner h1{
+    margin: 0;
+    color: rgb(21, 33, 20);
+    opacity: 0.7;
+    text-shadow: 1px1px 3px rgba(248, 248, 248, 0.2);
+}
+.banner p{
+    margin: 0;
+    color: rgb(0, 0, 0);
+    opacity: 0.7;
+    text-shadow: 1px1px 3px rgba(248, 248, 248, 0.2);
+}
+
