@@ -96,8 +96,9 @@ body{
 }
 
 .price{
-    color: grey;
-    font-size: 12px;
+    color: rgb(16, 1, 1);
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .card button{
@@ -120,6 +121,111 @@ body{
     background-color: white;
 
 }
+/* modal content */
+
+.modal-container{
+    width: 40%;
+    margin-left: 800px;
+    max-height: 88vh;
+    color: #030000;
+    background-color: #cadbd0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* for the top */
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+    scrollbar-color: none;
+}
+/* para que no se vea la barra de scroll */
+.modal-container::-webkit-scrollbar{
+    display: none;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-around;
+    background-color: #2aad54;
+    color: #fff;
+    width: 100%;
+    font-size: 12px;
+    font-family: cursive;
+}
+
+.modal-header-title{
+    justify-self: start;
+}
+
+.modal-header-button{
+    cursor: pointer;
+    border-radius: 50%;;
+    font-size: 16px;
+    padding: 5px;
+    background-color: white;
+    color: black;
+
+}
+
+.modal-header-button:hover{
+    color:white;
+    background-color: black;
+}
+
+.modal-container > .modal-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+    font-family: cursive;
+    font-size: 12px;
+}
+
+.modal-container > div > img{
+    width: 70px;
+    height: 70px;
+}
+
+/* el tacho de basura para eliminar producto del carrito */
+.borrarProducto{
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    padding: 5px;
 
 
+
+
+
+
+}
+
+.total-content{
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+    font-family: cursive;
+}
+
+
+/* cantidad carrito mostrado en NAV */
+.cantidad-carrito{
+    background-color: blue;
+    color: white;
+    border-radius: 90%;
+    font-size: 18px;
+    padding: 5px;
+    top: 37px;
+    right: 14px;
+    position: absolute;
+    display: none;
+}
 
