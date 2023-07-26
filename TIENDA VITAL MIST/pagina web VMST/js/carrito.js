@@ -36,8 +36,8 @@ const pintarCarrito = () => {
     <img src="${product.img}">
     <h3>${product.nombre}</h3>
     <p class="price">${product.precio}$</p>
-    <p> Cantidad: ${product.cantidad}</p>
-    <p> Subtotal: ${product.precio * product.cantidad}$</p>
+    <p> Cant.: ${product.cantidad}</p>
+    <p> Subt.: ${product.precio * product.cantidad}$</p>
     `;
     modalContainer.append(carritoContent);
 
