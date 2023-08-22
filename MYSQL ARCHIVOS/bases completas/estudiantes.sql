@@ -1,0 +1,1 @@
+ALTER TABLE estudiantes2022 AUTO_INCREMENT = 1:

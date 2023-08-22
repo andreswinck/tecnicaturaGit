@@ -21,3 +21,13 @@ matricula, nombre, porcentaje_comision) values (
 '00236', 'Cláudia Morais', 8);
 
 select * from tabla_de_vendedores;
+
+update tabla_de_vendedores set porcentaje_comision = 11
+where matricula = '00236';
+
+update tabla_de_vendedores set nombre = 'Joan Geraldo de la Fonseca Junior'
+where matricula = '00233';
+
+select * from tabla_de_vendedores;
+
+delete from tabla_de_vendedores where matricula = '00233';
