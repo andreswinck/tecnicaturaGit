@@ -1,1 +1,2 @@
-ALTER TABLE estudiantes2022 AUTO_INCREMENT = 1:
+
+SELECT * FROM estudiantes2022

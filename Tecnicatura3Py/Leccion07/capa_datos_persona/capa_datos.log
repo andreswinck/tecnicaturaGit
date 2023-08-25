@@ -307,3 +307,11 @@
             apellido: Ramos
             email: homeror@mail.com
         
+10:45:49 AM: DEBUG [cursor_del_pool.py:11] Inicio método with __enter__
+10:45:51 AM: ERROR [conexion.py:38] Ocurrió un error al obtener el pool connection to server at "127.0.0.1", port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+10:49:40 AM: ERROR [conexion.py:38] Ocurrió un error al obtener el pool connection to server at "127.0.0.1", port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+10:49:57 AM: INFO [menu_app_usuario.py:21] Salimos del programa.
