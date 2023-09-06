@@ -18,7 +18,7 @@ const displayCart = () => {
     modalClose.addEventListener('click', () => {
         modalContainer.style.display = 'none';
         modalOverlay.style.display = 'none';
-    });
+    });//fin modalClose
 
     
     const modalTitle = document.createElement('div');
@@ -47,18 +47,48 @@ const displayCart = () => {
         </div>
         `;
         modalContainer.append(modalBody);
-    });
+
+        const decrese = modalBody.querySelector('.quantity-btn-decrese');
+        decrese.addEventListener('click', () => {
+            if (product.quanty != 1) {
+            product.quanty --;
+            displayCart();
+            }
+        }); //fin decrease
+        const increase = modalBody.querySelector('.quantity-btn-increase');
+        increase.addEventListener('click', () => {
+            product.quanty ++;
+            displayCart();
+        });//fin increase
+
+        //delete product
+        const deleteProduct = modalBody.querySelector('.delete-product');
+
+        deleteProduct.addEventListener('click', () => {
+            deleteCartProduct(product.id);
+        });//fin deleteProduct
+
+    });//fin forEach
+
 
     //modal Footer
+    const total = cart.reduce((acc, el) => acc + el.price * el.quanty,0);
 
     const modalFooter = document.createElement('div');
     modalFooter.className = 'modal-footer';
     modalFooter.innerHTML = `
-        <div class="total-price">Total:</div>
+        <div class="total-price">Total: ${total} </div>
+
     `;
     modalContainer.append(modalFooter);
-};
+
+
+};//fin displayCart
 
 cartBtn.addEventListener('click', displayCart);
 
-// clase 03 video 3 empezar
+const deleteCartProduct = (id) => {
+    const foundId = cart.findIndex((element) => element.id === id);
+    cart.splice(foundId, 1);
+    displayCart();
+};
