@@ -1,0 +1,15 @@
+<div class="contenedor-producto">
+                    <div class="div-imagen-producto">
+                       <img src="../multimedia/categoria-comics/producto-comic-2.jpeg">
+                    </div>
+                    <div class="div-nombre-precio">
+
+                        <h2 class="div-nombre">...</h2>
+
+            <p class="div-precio">$...</p>
+
+            <buttom class="btn-agregar-carrito" id="categoria-remeras-producto-1">Agregar al Carrito</buttom>
+                        <!-- El ID es especifico de cada producto y responde al JSON donde esten los objetos para cada producto, lo unico que cambiaria es
+                        remeras y el número del producto-->
+                    </div>
+</div>
