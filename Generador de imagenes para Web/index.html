@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/src/App.css" />
+    <title>Generador de imagenes</title>
+  </head>
+  <body>
+    <h1 class="text-center">
+      <span class="badge bg-secondary">Generador de imagenes</span>
+    </h1>
+    <div class="card_help">
+      <div class="card-body text-center">
+        Servicio de generación de imágenes para las publicaciones <br />
+        pasos a seguir:<br />
+        1- Presionar el botón <b>seleccionar archivo</b>
+        <br />
+        2- Seleccionar el archivo de su computadora que desea añadir a la
+        publicación
+        <br />
+        3- Presionar el botón <b>generar Link</b>
+        <br />
+        Demorará unos instantes en generar el link, una vez creado se mostrará
+        el link generado.
+        <br />
+        4- Presionar el botón <b>copiar al portapapeles</b> para copiar el link
+        generado.
+        <br />
+        5- Agregar el link en la publicación utilizando el botón derecho del del mouse y seleccionado <b>Pegar</b>
+
+      </div>
+    </div>
+    <div id="root"></div>
+    <div>
+      <h2 id="tituloEnlace"></h2>
+    </div>
+    
+    <div id="enlace"></div>
+    <!-- <button id="botonCopiar">Copiar al portapapeles</button> -->
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
