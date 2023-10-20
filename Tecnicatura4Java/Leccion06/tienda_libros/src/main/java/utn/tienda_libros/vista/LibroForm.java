@@ -13,6 +13,13 @@ public class LibroForm extends JFrame {
     LibroServicio libroServicio;
     private JPanel panel;
     private JTable tablaLibros;
+    private JTextField libroTextoTextField;
+    private JTextField autorTextoTextField;
+    private JTextField precioTextoTextField;
+    private JTextField existenciasTextoTextField;
+    private JButton agregarButton;
+    private JButton modificarButton;
+    private JButton eliminarButton;
     private DefaultTableModel tablaModeloLibros;
 
 
@@ -20,6 +27,7 @@ public class LibroForm extends JFrame {
     public LibroForm(LibroServicio libroServicio) {
         this.libroServicio = libroServicio;
         iniciarForma();
+        agregarButton.addActionListener(e -> agregarLibro());
     }
 
     private void iniciarForma() {
@@ -33,6 +41,39 @@ public class LibroForm extends JFrame {
         int x = (tamaniopantalla.width - this.getWidth())/2;
         int y = (tamaniopantalla.height - this.getHeight())/2;
         setLocation(x, y);
+    }
+
+    private void agregarLibro() {
+        if(libroTextoTextField.getText().equals("")) {
+            mostrarMensaje("Ingrese el nombre del libro");
+            libroTextoTextField.requestFocusInWindow();
+            return;
+        }
+        var nombreLibro = libroTexto.getText();
+        var autor = autorTexto.getText();
+        var precio = Double.parseDouble(precioTexto.getText());
+        var existencias = Integer.parseInt(existenciasTexto.getText());
+        //Creamos el objeto libro
+        var libro = new Libro(null, nombreLibro, autor, precio, existencias);
+        //libro.setNombreLibro(nombreLibro);
+        //libro.setAutor(autor);
+        //libro.setPrecio(precio);
+        //libro.setExistencias(existencias);
+        this.libroServicio.guardarLibro(libro);
+        mostrarMensaje("Libro guardado con éxito");
+        limpiarFormulario();
+        listarLibros();
+    }
+
+    private void limpiarFormulario() {
+        libroTexto.setText("");
+        autorTexto.setText("");
+        precioTexto.setText("");
+        existenciasTexto.setText("");
+    }
+
+    private void mostrarMensaje(String mensaje) {
+        JOptionPane.showMessageDialog(this, mensaje);
     }
 
     private void createUIComponents() {
@@ -61,6 +102,7 @@ public class LibroForm extends JFrame {
                 };
                 this.tablaModeloLibros.addRow(renglonLibro);
             }
+
 
         });
     }
