@@ -63,6 +63,8 @@ h1{
     /* rounded-circle en bootrap */
 }
 
+/* logo lineas con animacion */
+
 #loader {
     margin-right: 0.313rem;
     margin-bottom: 7rem;
@@ -130,7 +132,7 @@ h1{
     font-size: 1.8rem;
 }
 
-/* sobre mi */
+/* La empresa */
 .la-empresa{
     height: 500px;
     padding: 10px;
@@ -149,12 +151,7 @@ h1{
 .servicios {
     padding: 40px 40px 60px 40px;
 }
-/* .servicios .row div{
-    height: 250px;
-    background-color: purple;
-    border: 3px solid orange;
-} */
-/* icono columna servicios  */
+
 .servicios i {
     font-size: 2.5rem;
     color: wheat;
@@ -193,12 +190,16 @@ h1{
 /* portfolio */
 
 .portfolio {
-    padding: 40px 40px 60px 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* padding: 40px 40px 60px 40px; */
 }
 
 /* columna del portfolio */
 .portfolio .columna{
-    padding: 10px;
+    padding: 20px;
     border: 2px solid #0808084d;
     border-radius: 10px;
     display: flex;
@@ -208,18 +209,25 @@ h1{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
     font-weight: 450;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     color: black;
-    background-color:rgb(241, 237, 229)
+    background-color:rgb(241, 237, 229);
+    height: auto;
 }
-.portfolio .columna :hover{
+.portfolio .columna:hover{
     color: white;
-    background-color:rgb(43, 14, 83)
+    background-color:rgb(43, 14, 83);
+    /* padding-bottom: 20px; */
 }
 .portfolio_titulo{
+    display: flex;
     font-size: 2.5rem;
     font-weight: bold;
-    margin: 10px 0;
+    margin: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
 }
 .enlace_portfolio{
     text-decoration: none;
@@ -229,34 +237,37 @@ h1{
     text-decoration: none;
     color: white;
 }
+/*portfolio IZQUIERDA */
 .portfolio .columna img:not(.img_portfolio_centro, .img_portfolio_derecha){
     margin-top: 60px;
     width: 60%;
+    margin-bottom: 40px;
+ }
+.img_portfolio_izquierda{
+    width: 100%;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
-/* .img_portfolio_izquierda{
-    width: 80%;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}*/
+/* portfolio CENTRO */
 .img_portfolio_centro{
     width: 100%;
     margin-top: 100px;
     border-radius: 10px;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
 } 
 
+/* portfolio DERECHA */
 .img_portfolio_derecha:not(.img_portfolio_centro,.img, .img_portfolio_izquierda){
     width: 80%;
     margin-top: 100px;
     border-radius: 10px;
-    margin-bottom: 80px;
+    /* margin-bottom: 100px; */
+    padding-bottom: 100px;
 }
-.p_port{
-    padding-left: 10px;
-    padding-right: 10px;
-}
+
+/* .portfolio_descripcion_derecha{
+    padding-bottom: 3000px;
+} */
 
 
 
